@@ -11,7 +11,7 @@ import org.openqa.selenium.*;
 
 /* Action name for this script is "eBroker4Selectlist"  */
 
-class selectitemfromlist{
+class clickonbutton{
     public void run(HashMap<String, String> params){
 
         if (params.get("selectBy").equals("css")){            
