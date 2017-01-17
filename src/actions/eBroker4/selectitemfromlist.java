@@ -13,9 +13,12 @@ import org.openqa.selenium.*;
 
 class selectitemfromlist{
     public void run(HashMap<String, String> params){
-
-        if (params.get("selectBy").equals("css")){            
+        if (params.get("selectBy").equals("css")){        
                         
+            WebElement listname= Browser.Driver.findElement(By.cssSelector(params.get("listName")));
+            listname.click();
+            
+            
             WebElement select = Browser.Driver.findElement(By.cssSelector(params.get("selectByvalue")));
             
             List<WebElement> options = select.findElements(By.tagName(params.get("tagname")));
@@ -25,6 +28,7 @@ class selectitemfromlist{
             if(params.get("Value").equals(option.getText().trim())){
 
              option.click();   
+                break;
             }
                 
             }

@@ -9,26 +9,33 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.*;
 
 
+
 /* Action name for this script is "eBroker4Selectlist"  */
 
 class clickonbutton{
     public void run(HashMap<String, String> params){
+        
+        String isSelected;
 
         if (params.get("selectBy").equals("css")){            
                         
             WebElement select = Browser.Driver.findElement(By.cssSelector(params.get("selectByvalue")));
             
             List<WebElement> options = select.findElements(By.tagName(params.get("tagname")));
-            
-            for (WebElement option : options) {
-
-            if(params.get("Value").equals(option.getText().trim())){
-
-             option.click();   
-            }
-                
-            }
-
+                  
+                for (WebElement option : options) 
+                {       
+                        if(params.get("Value").equals(option.getText().trim()))
+                        {		
+                          if (!option.isSelected())
+                          {
+                              option.click();  
+                              break;
+                          }
+                           
+                       	}
+                            
+            	}    
             
         }
         
