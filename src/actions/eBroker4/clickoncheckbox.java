@@ -1,5 +1,6 @@
 package actions.eBroker4;
 
+
 import java.util.*;
 
 import actions.selenium.utils.Elements;
@@ -8,14 +9,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.*;
 
-
-
-/* Action name for this script is "eBroker4Selectlist"  */
-
-class clickonbutton{
+class clickoncheckbox{
     public void run(HashMap<String, String> params){
-     
-        if (params.get("selectBy").equals("css")){            
+        
+    if (params.get("selectBy").equals("css")){            
                         
             WebElement select = Browser.Driver.findElement(By.cssSelector(params.get("selectByvalue")));
             
