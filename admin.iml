@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jar" level="project" />
+    <orderEntry type="library" name="agent" level="project" />
+    <orderEntry type="library" name="eBroker4-Eldon2" level="project" />
+    <orderEntry type="library" name="client-combined-3.0.1-nodeps" level="project" />
+    <orderEntry type="library" name="eBroker4-Eldon1" level="project" />
+    <orderEntry type="library" name="selenium-support-3.0.1" level="project" />
+    <orderEntry type="library" name="lib3" level="project" />
+    <orderEntry type="library" name="eBroker4-Eldon" level="project" />
+    <orderEntry type="library" name="eBroker4-Eldon4" level="project" />
+    <orderEntry type="library" name="jar1" level="project" />
+    <orderEntry type="library" name="eBroker4-Eldon3" level="project" />
+    <orderEntry type="library" name="Sample" level="project" />
+    <orderEntry type="library" name="selenium-api-3.0.1" level="project" />
+    <orderEntry type="library" name="Sample1" level="project" />
+  </component>
+</module>
